@@ -75,8 +75,9 @@ docs/_build/
 .pybuilder/
 target/
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
 
 # IPython
 profile_default/
@@ -216,3 +217,32 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+###########
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Python (Arquivos compilados e ambientes)
+__pycache__/
+*.py[cod]
+*$py.class
+.venv
+venv/
+env/
+bin/
+lib/
+
+# Distribuição / Pacotes
+dist/
+build/
+*.egg-info/
+
+# Dados e Logs (Proteção de volume e privacidade)
+*.log
+# data/             # Descomente se não quiser subir os CSVs originais
+# .env              # Sempre ignore arquivos com credenciais
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
